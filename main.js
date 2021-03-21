@@ -30,19 +30,20 @@ function getRandomInt(min, max) {
 }
 
 const addHint = (guess) => {
-  let hint = generateHint(guess);
-}
-
-const mastermind = (guess) => {
-  board.push(guess);
+  hint = generateHint(guess);
+  return hint
+  }
+  
+  const mastermind = (guess) => {
+  board.push(guess.concat(' ', addHint(guess)));
   if (guess === solution){
-    return 'You guessed it!';
+  return 'You guessed it!';
   }
   else if (guess.length === 4 && guess !== solution){
-    generateHint(guess);
-    addHint(guess);
+  generateHint(guess);
+  addHint(hint);
   }
-}
+  
 
 //Generate Hint
 const generateHint = (guess) => {
@@ -86,7 +87,8 @@ function getPrompt() {
     getPrompt();
   });
 }
-
+  }
+  
 // Tests
 
 if (typeof describe === 'function') {
@@ -116,3 +118,4 @@ if (typeof describe === 'function') {
   generateSolution();
   getPrompt();
 }
+  
