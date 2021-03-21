@@ -61,7 +61,7 @@ const generateHint = (guess) => {
       solutionArr[i] = null;
     }
   }
-
+  
   //Check letter accuracy
   for(let i = 0; i < 4; i++)
   {
