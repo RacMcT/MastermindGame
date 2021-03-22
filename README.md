@@ -1,4 +1,30 @@
-# Rachel's Code Plan:
+# RACHEL'S CODE PLAN:
+
+* Mastermind Terminal Game:
+* Goal: guess a secret code consisting of a series of 4
+letters (or colors)-- crack the code! 
+
+* Rules/Playing the Game: 
+* "Each guess is made by placing a row of code pegs on the decoding board. Once placed, the codemaker provides feedback by placing from zero to four key pegs in the small holes of the row with the guess. A colored or black key peg is placed for each code peg from the guess which is correct in both color and position."  (https://en.wikipedia.org/wiki/Mastermind_(board_game))
+
+# Pseudo Code:
+
+* Game Set-Up:
+Computer creates a randomly generated code sequence with both letters and thier location
+
+* Players need to enter their guesses for the letters and the order of the letters (their location) for the code
+* Terminal needs to take the letters and thier locaiton and compare it to the randomly generated answer it creates at the game setup/start
+* Terminal needs to loop through the letters and their locaiton (index) to compare if either is correct for the sequence input.
+* Terminal needs to provide a hint or feedback for the user based on the comparision between thier submission and the answer
+* Terminla needs to print/console.log() etc the feedback/hint for the user
+* The user needs to be able to enter a new code sequence to have it check again
+* Game needs to check to see if the user has won the game- matched the code sequence in letters and thier location 
+* Game needs to inform the user that they won the game
+
+
+
+
+
 
 1. Create a new branch called "masterMind" 
 **DONE
